@@ -33,7 +33,7 @@ function startRabbitConnection() {
     }
     return new Promise((resolve, reject) => {
         amqp.connect(
-            `amqp://${process.env.RABBIT_USERNAME}:${process.env.PASSWORD}@144.217.65.234:5672/`,
+            `amqp://${process.env.RABBIT_USERNAME}:${process.env.PASSWORD}@${process.env.IP}:5672/`,
             (error, connection) => {
                 if (error) {
                     reject(error);

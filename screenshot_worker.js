@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 amqp.connect(
-    `amqp://${process.env.RABBIT_USERNAME}:${process.env.PASSWORD}@144.217.65.234:5672/`,
+    `amqp://${process.env.RABBIT_USERNAME}:${process.env.PASSWORD}@${process.env.IP}:5672/`,
     function (error0, connection) {
         if (error0) {
             throw error0;
