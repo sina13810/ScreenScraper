@@ -19,4 +19,4 @@ Logging: Detailed logging to track the status of screenshot requests and system 
 
 _Node.js_\
 _RabbitMQ server_\
-_Puppeteer_\
+_Puppeteer_
